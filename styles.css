@@ -1,10 +1,14 @@
+
+/*Pagina home*/
+/*cor das pagnias e fontes*/
 body{
     margin:0;
-    font-family: Arial;
+    font-family: Gloucester MT Extra Condensed;
+    font-size: 20px;
     background-color: rgb(3, 71, 110);
     color:rgb(255, 255, 255)
 }
-
+/*aba de site*/
 header{
 background-color: rgb(5, 86, 133);
 padding:20px;
@@ -19,13 +23,19 @@ color:rgb(255, 255, 255);
 margin:20px;
 text-decoration:none;
 font-weight: bold;
-font-size: 18px;
+font-size: 25px;
+font-family: Gloucester MT Extra Condensed;
 }
 
+nav a:hover {
+    background-color: rgb(5, 86, 133);
+    color: rgb(1, 0, 87);            
+}          
+/*sla*/
 .conteudo{
 padding: 40px;
 }
-
+/*sobre h1*/
 h1{
 font-size: 45px;
 margin-bottom: 30px;
@@ -36,7 +46,7 @@ display: flex;
 align-items: center;
 gap: 40px;
 }
-
+/*imagens*/
 .area img{
 width: 300px;
 border-radius: 10px;
@@ -51,11 +61,77 @@ border-radius: 10px;
 .area img{
     width: 300px;
     border-radius: 10px;
-    animation: pular 1s infinite;
+    animation: pular 2s infinite;
 }
 
 @keyframes pular {
     0% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0); }
+}
+
+
+
+
+/*Pagina sobre*/
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* TEXTO */
+.texto {
+    width: 60%;
+}
+
+/* IMAGEM NA DIREITA */
+.imagem {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOTO */
+.foto {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/*pagina projetos*/
+
+
+/*pagina contato*/
+.contato {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(7, 105, 161);;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 20px;
+    background-color: #25d3d3;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+    background-color: #00d9ff;
+}
+
+.qr {
+    margin: 20px 0;
+}
+
+img {
+    border-radius: 10px;
 }
